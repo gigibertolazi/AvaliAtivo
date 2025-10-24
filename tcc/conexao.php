@@ -1,13 +1,16 @@
 <?php
-$hostname = "localhost"; 
+$servername = "localhost"; 
 $username = "root";
 $password = "";
 $dbname = "avaliativo";
 
 
-$conexao = new mysqli($hostname, $username, $password, $dbname);
-if (!$conexao) {
-    die( "Conexão falhou: " . $conexao->connect_error);
-}
-
+$conn = new mysqli($servername, $username, $password, $dbname);
+//if (!$conn) {
+    //die( "Conexão falhou: " . $conn->connect_error);
+    //echo "Erro na conexão com o banco de dados.";
+//}
+//lse {
+   // echo "Conexão bem-sucedida.";
+//}
 ?>
